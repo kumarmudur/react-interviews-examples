@@ -1,23 +1,16 @@
-import logo from './logo.svg';
+import DarkModeToggle from "./components/darkMode/DarkModeToggle";
+import TodoList from './components/todoList/TodoList';
+import InputOTP from './components/inputOTP/InputOTP';
+
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>ReactJS Examples</h1>
+      {/*<TodoList />*/}
+      {/*  <DarkModeToggle />*/}
+        <InputOTP />
     </div>
   );
 }
