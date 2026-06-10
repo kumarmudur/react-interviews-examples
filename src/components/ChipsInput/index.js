@@ -38,7 +38,7 @@ const ChipsInput = () => {
                 {
                     chips.map((chip) => (
                         <div
-                            key={chip.id}
+                             key={chip.id}
                              style={{
                                  display: 'flex',
                                  alignItems: 'center',
