@@ -3,22 +3,22 @@ import { TodoItemProps} from "./TodoList.types";
 const TodoItem = ({ todo, onToggle, onDelete }: TodoItemProps) => {
     return (
         <div style={styles.todoItem}>
-        <input
-            type="checkbox"
+             <input
+                type="checkbox"
                 checked={todo.completed}
                 onChange={() => onToggle(todo.id)}
-                />
-                <span
+             />
+             <span
                     style={{
                         ...styles.todoText,
                                 textDecoration: todo.completed ? "line-through" : "none",
                         }}
                     >
                     {todo.text}
-                </span>
-                <button onClick={() => onDelete(todo.id)} style={styles.deleteButton}>
+            </span>
+            <button onClick={() => onDelete(todo.id)} style={styles.deleteButton}>
                     Delete
-                </button>
+            </button>
         </div>
     )
 };
