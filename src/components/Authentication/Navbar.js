@@ -11,10 +11,10 @@ const Navbar = () => {
                 isLoggedIn ? (
                     <>
                         <span>Welcome, User!</span>
-                        <button onClick={logout}>Logout</button>
+                        <button type="button" onClick={logout}>Logout</button>
                     </>
                 ) : (
-                    <button onClick={login}>Login</button>
+                    <button type="button" onClick={login}>Login</button>
                 )
             }
         </nav>
