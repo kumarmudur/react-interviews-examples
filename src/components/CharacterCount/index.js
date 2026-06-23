@@ -5,8 +5,8 @@ function CharacterCount() {
     const [text, setText] = useState("");
     const [maxLength, setMaxLength] = useState(50);
 
-    function handleChange(e) {
-        setText(e.target.value);
+    const handleChange = event => {
+        setText(event.target.value);
     }
 
     const handleChangeChar = event => {
@@ -26,10 +26,14 @@ function CharacterCount() {
                 <div className="inputs">
                     <label>
                         Max length:
-                        <input type="number" min="0" max="1000"
-                               value={maxLength}
-                               onChange={handleChangeChar}
-                               data-testid="maxlength" />
+                        <input
+                            type="number"
+                            min="0"
+                            max="1000"
+                            value={maxLength}
+                            onChange={handleChangeChar}
+                            data-testid="maxlength"
+                        />
                     </label>
                 </div>
                 <textarea
